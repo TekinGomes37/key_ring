@@ -1,0 +1,7 @@
+{
+  "name": "key_ring",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
