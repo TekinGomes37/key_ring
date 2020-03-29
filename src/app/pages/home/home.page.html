@@ -1,11 +1,35 @@
 <ion-header>
   <ion-toolbar>
+
     <ion-title>
-      Blank
+      Key  ring
     </ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button (click)="showAlertToAddNewAccount()">
+        <ion-icon slot="icon-only" name="add"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <p>Hello</p>
+  <ion-text color="secondary" class="ion-text-center">
+    <h1>Mes comptes</h1>
+  </ion-text>
+
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="11">
+
+        <ion-list>
+          <ion-item *ngFor="let account of accounts" (click)="showAccount(account.id)">
+            <ion-label>{{ account.service }}</ion-label>
+          </ion-item>
+        </ion-list>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
