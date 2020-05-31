@@ -42,7 +42,7 @@ export class HomePage {
         {
           name: 'mdp',
           type: 'text',
-          placeholder: 'O_o'
+          placeholder: '******** O_o'
         },
       ],
       buttons: [
