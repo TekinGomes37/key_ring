@@ -9,7 +9,10 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "dev:l": "ionic cap run android -l --external",
+    "res:a": " cordova-res android --skip-config --copy",
+    "res:i": " cordova-res ios --skip-config --copy"
   },
   "private": true,
   "dependencies": {

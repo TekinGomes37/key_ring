@@ -1,11 +1,17 @@
 {
-  "appId": "io.ionic.starter",
-  "appName": "key_ring",
+  "appId": "key.ring.gomes.fr",
+  "appName": "Mes secrets",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",
   "cordova": {},
   "android": {
     "webContentsDebuggingEnabled": false
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 3000,
+      "showSpinner": false
+    }
   }
 }
